@@ -1,0 +1,533 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header {
+  grid-column: 1 / span 4;
+  background-color: #340F35;
+  max-height: 200px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+.left_side {
+  grid-column: 1 / span 1;
+  background-color: #340F35;
+  min-height: 92vh;
+  position: sticky;
+  top: 200px;
+  z-index: 100px;
+}
+
+.right_side {
+  grid-column: 2 / span 3;
+  background-color: #EFF6FC;
+}
+
+.group_text p {
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.direct_text p {
+  cursor: pointer;
+  color: aliceblue;
+}
+
+hr {
+  margin-top: 0px;
+  color: rgb(73, 76, 76);
+}
+
+#flack_image {
+  width: 130px;
+  object-fit: contain;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.header input {
+  margin-left: 440px;
+  width: 400px;
+  border-radius: 5px;
+
+}
+
+.header i {
+  color: rgb(25, 25, 26);
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 590px;
+
+}
+
+input[type="text"]::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+}
+
+#circle_image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 40px;
+}
+
+h4 {
+  color: #EFF6FC;
+  margin-left: 10px;
+}
+
+.group_text {
+  margin-bottom: 50px;
+}
+
+h4 i {
+  font-size: x-large;
+  margin-top: 7px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.group_text p {
+  margin-left: 30px;
+  margin-top: -5px;
+}
+
+.direct_text p {
+  margin-left: 30px;
+  margin-top: -10px;
+}
+
+#user_image {
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.right_side h5 {
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 85px;
+  font-weight: 650;
+  color: black;
+}
+
+#message_send_user_image {
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.chat_messages h6 {
+  position: absolute;
+  margin-top: -42px;
+  margin-left: 70px;
+  font-weight: 650;
+  color: black;
+  font-size: larger;
+}
+
+.chat_messages span {
+  position: absolute;
+  margin-top: -38px;
+  margin-left: 160px;
+  font-size: smaller;
+  color: #626262;
+}
+
+.username_created_date {
+  display: flex !important; 
+}
+.username_created_date h6{
+  margin-right: 10px;
+}
+.chat_messages p {
+ 
+  color: black;
+  font-size: large;
+  margin-left: 65px;
+  margin-top: -14px;
+}
+
+.message_div {
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 10px;
+}
+
+.message_div input {
+  width: 900px;
+  bottom: 0;
+  position: fixed;
+}
+
+/* :host ::ng-deep .p-dialog {
+  position: fixed;
+  width: 400px;
+  margin-left: 100px;
+  padding: 5px;
+  top: 50px;
+} */
+
+::ng-deep .custom-dialog .ui-dialog-content {
+  background-color: black;
+  
+}
+
+:host {
+  ::ng-deep .customDialog {
+      background-color: rgb(134, 51, 51) !important;
+      width: 92vw !important;
+      box-shadow: 0px 20px 20px #D8DDE680;
+      border: 1px solid rgb(231, 231, 231);
+  }
+}
+
+
+#name {
+  color: black;
+  font-size: larger;
+}
+
+.main_div {
+  background-color: #181818;
+  color: #fff;
+  width: 450px;
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius: 10px;
+  z-index: -1;
+  padding-top: 70px;
+}
+
+.h5element {
+  margin-top: -10px;
+  text-align: center;
+
+}
+.h5element h5 {
+  margin-top: -45px;
+  color: #fff;
+  margin-left: -19px;
+}
+
+.pi-ellipsis-v {
+  position: fixed;
+  margin-left: 400px;
+  cursor: pointer;
+}
+
+
+.admin_div {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #302f2f;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.image {
+  margin-left: 10px;
+  display: flex;
+}
+.admin_div h6 {
+  margin-left: 15px;
+  padding-top: 4px;
+}
+
+.image img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+
+.admin_div p{
+  margin-top: -8px;
+  margin-left: 10px;
+}
+
+.manager_div h6{
+  padding-top: 4px;
+  margin-left: 15px;
+}
+
+.manager_div p{
+  margin-top: -8px;
+  margin-left: 10px;
+}
+
+.writer_div h6{
+  padding-top: 4px;
+  margin-left: 15px;
+}
+
+.writer_div p{
+  margin-top: -8px;
+  margin-left: 10px;
+}
+
+.reader_div h6{
+  margin-left: 15px;
+}
+
+.reader_div p{
+  margin-top: -8px;
+  margin-left: 10px;
+}
+
+#horizontal {
+  color: #fff;
+  margin-top: 5px;
+}
+.manager_div {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #302f2f;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.writer_div {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #302f2f;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.reader_div {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #302f2f;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.pi-plus-circle {
+  margin-left: 180px;
+  margin-bottom: 10px;
+  margin-top: 4px
+}
+span {
+  margin-left: 5px;
+}
+
+.add_user_div {
+  background-color: #181818;
+  color: #fff;
+  width: 400px;
+  border-radius: 10px;
+  z-index: -1;
+  text-align: center;
+  min-height: 210px;
+}
+.add_user_div h5 {
+  padding-top: 5px;
+}
+.user_dialog_box_div {
+  cursor: pointer;
+}
+.users{
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #302f2f; 
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 10px;
+}
+.input {
+  width: 370px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.user_names img{
+  margin-left: -300px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.user_names p{
+  margin-top: -30px;
+  margin-left: -200px;
+  cursor: pointer;
+}
+.user_names {
+  margin-bottom: 10px;
+}
+
+/* Change Role  */
+
+.change_user_role {
+  background-color: #181818;
+  color: #fff;
+  width: 450px;
+  border-radius: 10px;
+  z-index: -1;
+  margin-bottom: 20px;
+  min-height: 330px;
+}
+
+.change_user_role h5{
+  padding-top: 5px;
+  text-align: center;
+}
+
+.current_user img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+.current_user {
+  margin-left: 10px;
+  background-color: #3F3E3E;
+  display: flex;
+  margin-right: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.current_user p{
+  margin-left: 10px;
+  margin-top: 7px;
+  font-size: larger;
+}
+
+#hrtag {
+  color: #fff;
+}
+.current_role {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #3F3E3E;
+  min-height: 60px;
+}
+
+.hrline {
+  color: #fff;
+  margin-top: -1px;
+}
+#h6element {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.h6tag {
+  color: orange;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.roles {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #3F3E3E;
+  margin-bottom: 15px;
+  min-height: 130px;
+}
+#roleh6ele {
+  padding: 3px;
+  margin-left: 20px;
+}
+#admin {
+  margin-left: 20px;
+  color: red;
+  cursor: pointer;
+}
+#writer {
+  margin-left: 20px;
+  color: yellow;
+}
+#reader {
+  margin-left: 20px;
+  color: blue;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 326px) {
+
+  .left_side {
+    grid-column: 1 / span 4;
+    background-color: #340F35;
+    min-height: 92vh;
+  }
+  .header {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    background-color: #340F35;
+    max-height: 400px;
+  }
+
+  #flack_image {
+    width: 100px;
+    object-fit: contain;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  
+  .header input {
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 170px;
+    border-radius: 5px;
+  
+  }
+  
+  .header i {
+    color: rgb(25, 25, 26);
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -40px;
+  
+  }
+  
+  input[type="text"]::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+  }
+  
+  #circle_image {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-right: 40px;
+    margin-top: -36px;
+  }
+  hr {
+    margin-top: 22px;
+    color: rgb(73, 76, 76);
+  }
+  #h3tag {
+    margin-left: 60px;
+  }
+  .group_text p {
+    margin-left: 80px;
+  }
+  .direct_text p {
+    margin-left: 85px;
+  }
+ 
+
+}

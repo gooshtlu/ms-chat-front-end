@@ -1,0 +1,260 @@
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header {
+    grid-column: 1 / span 4;
+    background-color: #340F35;
+    max-height: 200px;
+}
+
+.left_side {
+    grid-column: 1 / span 1;
+    background-color: #340F35;
+    min-height: 92vh;
+}
+
+.right_side {
+    grid-column: 1 / span 4;
+    background-color: #EFF6FC;
+}
+
+.group_text p {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.direct_text p {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+hr {
+    margin-top: 0px;
+    color: rgb(73, 76, 76);
+}
+
+#flack_image {
+    width: 130px;
+    object-fit: contain;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.header input {
+    margin-left: 440px;
+    width: 400px;
+    border-radius: 5px;
+
+}
+
+.header i {
+    color: rgb(25, 25, 26);
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 590px;
+
+}
+
+input[type="text"]::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+}
+
+#circle_image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 40px;
+}
+
+h4 {
+    color: #EFF6FC;
+    margin-left: 10px;
+}
+
+.group_text {
+    margin-bottom: 50px;
+}
+
+h4 i {
+    font-size: x-large;
+    margin-top: 7px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.group_text p {
+    margin-left: 30px;
+    margin-top: -5px;
+}
+
+.direct_text p {
+    margin-left: 30px;
+    margin-top: -5px;
+}
+
+#user_image {
+    object-fit: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.right_side h5 {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 85px;
+    font-weight: 650;
+    color: black;
+}
+
+#message_send_user_image {
+    object-fit: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.chat_messages h6 {
+    position: absolute;
+    margin-top: -42px;
+    margin-left: 70px;
+    font-weight: 650;
+    color: black;
+    font-size: larger;
+}
+
+.chat_messages span {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 85px;
+    font-size: smaller;
+    color: #626262;
+}
+
+.chat_messages p {
+    color: black;
+    font-size: large;
+    margin-left: 65px;
+    margin-top: -14px;
+}
+
+.message_div {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 10px;
+}
+
+.message_div input {
+    width: 900px;
+    bottom: 0;
+    position: fixed;
+}
+
+:host ::ng-deep .p-dialog {
+    position: fixed;
+    width: 400px;
+    margin-left: 100px;
+    padding: 5px;
+    top: 50px;
+}
+
+#name {
+    color: black;
+    font-size: larger;
+}
+
+@media screen and (max-width: 326px) {
+
+    .left_side {
+        grid-column: 1 / span 4;
+        background-color: #EFF6FC;
+        min-height: 92vh;
+    }
+
+    .header {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 2;
+        background-color: #340F35;
+        max-height: 400px;
+    }
+
+    #flack_image {
+        width: 100px;
+        object-fit: contain;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    .header input {
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 280px;
+        border-radius: 5px;
+        margin-bottom: 6px;
+    }
+
+    .header i {
+        color: rgb(25, 25, 26);
+        position: absolute;
+        margin-top: 60px;
+        margin-left: -40px;
+
+    }
+
+    input[type="text"]::placeholder {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: large;
+    }
+
+    #circle_image {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        float: right;
+        margin-right: 20px;
+        margin-top: -80px;
+    }
+
+    hr {
+        color: rgb(73, 76, 76);
+    }
+
+    #h3tag {
+        color: black;
+        margin-left: 60px;
+    }
+    .group_text p {
+        color: black;
+        margin-left: 80px;
+          font-size: larger;
+    }
+
+    .direct_text p {
+        margin-left: 85px;
+        color: black;
+        font-size: larger;
+    }
+
+    .message_div input {
+        width: 300px;
+        bottom: 0;
+        position: fixed;
+    }
+
+}

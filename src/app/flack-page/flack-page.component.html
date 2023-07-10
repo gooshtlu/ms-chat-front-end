@@ -1,0 +1,56 @@
+<div class="grid_container">
+
+    <div class="header" *ngIf="show_names_div">
+        <img src="https://miro.medium.com/v2/resize:fit:622/format:webp/1*GBT8swCO6q6dYl6W9LL5ZQ.png" alt="logo"
+            id="flack_image">
+        <i class="pi pi-search"></i>
+        <input type="text" placeholder="search" [(ngModel)]="search_name" name="search_name"
+            (input)="search_user_name()">
+
+        <p-dialog header="Search Users" [(visible)]="show_search_users">
+            <span *ngFor="let item of search_user_names">
+                <p id="name">{{item}}</p>
+            </span>
+        </p-dialog>
+        <img src="https://m.media-amazon.com/images/I/61uYuKQhJRL._AC_UF894,1000_QL80_.jpg" alt="image"
+            id="circle_image">
+    </div>
+
+    <div class="left_side" *ngIf="show_names_div">
+        <hr>
+        <div class="group_text">
+            <h4 id="h3tag">Group Chats <i class="pi pi-caret-down"></i> </h4>
+            <p *ngFor="let item of group_names" (click)="display_all_group_messages(item)">#{{item}}</p>
+        </div>
+
+        <div class="direct_text">
+            <h4 id="h3tag">Direct Messages <i class="pi pi-caret-down"></i></h4>
+            <span *ngFor="let item of chat_users_names">
+                <p (click)="display_user_messages(item)">{{item}}</p>
+            </span>
+        </div>
+    </div>
+
+    <div class="right_side" *ngIf="show_chat_div">
+    
+        <i class="pi pi-angle-left"  [style]="{ 'font-size': '2rem', 'margin-top': '10px' }" id="user_image" (click)="back_to_home()"></i>
+        <h5>{{user_name}}</h5>
+        <hr>
+
+        <div class="chat_messages" *ngFor="let item of message_contents">
+            <img src="data:image/jpeg;base64,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"
+                alt="" id="message_send_user_image">
+            <h6>{{item.username}}</h6>
+            <span>{{item.created_date}}</span>
+            <p>{{item.message_content}}</p>
+        </div>
+
+        <div class="message_div" *ngIf="display_message_input">
+            <form (ngSubmit)="send_messages()">
+                <input type="text" placeholder="Messages" [(ngModel)]="message_content" name="message_content">
+            </form>
+        </div>
+
+    </div>
+
+</div>

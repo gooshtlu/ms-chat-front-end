@@ -1,0 +1,41 @@
+<div class="container" *ngIf="!login_flack">
+    <div class="left_side_content">
+        <h1 id="text">Get Closer To <br> EveryOne</h1>
+        <h4 id="small_text">Helps you to contact everyone <br> with just one easy way</h4>
+
+        <button id="get_start_button"  (click)="login_page()">Get Started</button>
+
+    </div>
+    <div class="right_side_content" >
+        <div class="images">
+            <img src="https://miro.medium.com/v2/resize:fit:622/format:webp/1*GBT8swCO6q6dYl6W9LL5ZQ.png" alt="logo">   
+        </div>
+   
+        <div class="image1">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ThPwu1dlqIxQbM3zirdfrw.png" alt="logo">
+        </div>
+    </div>
+    
+</div>
+
+<div class="login_container" *ngIf="login_flack">
+   <div class="left_arrow">
+    <i class="pi pi-arrow-circle-left" type="button" (click)="front_page()" style="font-size: 3rem"></i>
+   </div>
+   <div class="content"> 
+    <h2>Hello, Welcome Back</h2>
+    <h5>Happy to see you again, to use your <br> account please login first</h5>
+    <form #registerUser="ngForm" (ngSubmit)="login_to_flack(registerUser.value)" ngNativeValidate>
+        <label>Email Address</label> <br>
+        <input class="form" type="email" ngModel name="email_id"> <br>
+        <label>Username</label>
+        <input type="text" class="form" ngModel name="username">
+        <button class="login_button">Login</button>
+    </form>
+   </div>
+   <div class="right_side_image">
+ 
+   </div>
+</div>
+
+
